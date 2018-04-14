@@ -23,6 +23,10 @@
     padding-right: 1rem !important;
 }
 
+.modal-body ul {
+    text-align: left;
+}
+
 
 body{
     font-family: 'Montserrat', sans-serif;
