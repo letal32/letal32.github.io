@@ -146,7 +146,7 @@ a.nav-item.nav-link.active:hover {
     width: 134px;
 }
 
-@media (min-width: 544px) {
+@media (min-width: 768px) {
 
   #name {
     font-size: 5rem;
