@@ -1,3 +1,30 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 100px;
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+p {
+    font-weight: 600;
+    margin-bottom: 70px;
+    /*text-align: justify;*/
+}
+
+hr {
+    width: 300px;
+    height: 3px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+.navbar {
+    min-height:100px !important;
+}
+
+
 .navbar-dark .navbar-brand {
     color : white;
     font-family: 'Montserrat', sans-serif;
@@ -23,48 +50,17 @@
     padding-right: 1rem !important;
 }
 
-.modal-body ul {
-    text-align: left;
+.active {
+    background-color: #cfcd2d;
+    border-radius: 0.25rem !important; 
 }
 
-
-body{
-    font-family: 'Montserrat', sans-serif;
-    padding-top: 100px;
-    text-align: center;
-    height: 100%;
-    position: relative;
+a.nav-item.nav-link.active:hover {
+    color: white;
 }
 
-h1 {
-    font-size: 5em;
-    font-weight: 700;
-}
-
-h2 {
-    font-size: 3em;
-    font-weight: 700;
-}
-
-h3 {
-    font-weight: 600;
-    margin-bottom: 70px;
-}
-
-h4 {
-    font-weight: 600;
-    font-size: 1.5em;
-    margin-bottom: 70px;
-}
-
-#lastH4 {
-    margin-bottom: 10px;
-}
-
-p {
-    font-weight: 600;
-    margin-bottom: 70px;
-    text-align: justify;
+.bottomBar {
+    background-color: #2d3035;
 }
 
 .bottomBar p {
@@ -75,36 +71,35 @@ p {
 }
 
 .odd-page {
-    background-color: #18bc9c;
-    padding-top: 100px;
+    background-color: #cfcd2d;
+    padding-top: 30px;
+    padding-bottom: 30px;
     color: white;
 }
 
 .even-page {
     background-color: white;
-    padding-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     color: #2c3e50;
 }
 
 .last-page {
     background-color: #2c3e50;
     color: white;
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.page-title {
+    font-size: 3em;
+    font-weight: 700;
 }
 
 .last-page .fa {
-    margin-bottom: 30px;
-}
-
-.bottomBar {
-    background-color: #2d3035;
-}
-
-hr {
-    width: 300px;
-    height: 3px;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
 }
 
 .hr-odd {
@@ -115,58 +110,36 @@ hr {
     background: #2c3e50; 
 }
 
-img {
-    border-radius: 50%;
-    margin-bottom: 50px;
-}
-
 .img-thumbnail {
     height: 300px;
 }
 
-.navbar {
-    min-height:100px !important;
+.img-story {
+    /*margin: 30px 30px 30px 30px;*/
+    width: 80%;
 }
 
-.fa {
-    margin-left: 10px;
-    margin-right: 10px;
-    color: white;
+.shout {
+    font-size: 20px;
+    margin: 50px 50px 50px 50px;
 }
 
-.active {
-    background-color: #18bc9c;
-    border-radius: 0.25rem !important; 
+/*.center-col{
+    display: flex;
+    align-items: center;
+}*/
+
+#name {
+    font-size: 5em;
+    font-weight: 700;
 }
 
-a.nav-item.nav-link.active:hover {
-    color: white;
-}
-
-
-/*Modal styles*/
-
-.modal-dialog{
-    max-width: 3000px;
-    margin: 2.0rem;
-}
-
-.close {
-    font-size: 3rem;
-    color: #8bdece;
-}
-
-.close:hover{
-    color: #18bc9c;
-}
-
-.modal-p {
-    font-weight: 400;
-}
-
-.btn-secondary {
-    background-color: #18bc9c;
-    color: white;
+#title {
     font-weight: 600;
-    border-style: none; 
+    margin-bottom: 100px;
+}
+
+#profile-pic {
+    border-radius: 50%;
+    margin-bottom: 50px;
 }
