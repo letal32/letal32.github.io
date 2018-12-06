@@ -22,7 +22,7 @@
 <body id="landing" data-spy="scroll" data-target="#navbar-main" data-offset="100">
 
         <nav id="navbar-main" class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #2c3e50">
-        <div class="container">
+        <div class="container">  
           <a class="navbar-brand" href="#">MARCO STELLIN</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,8 +31,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="#about">ABOUT</a>
-                <a class="nav-item nav-link" href="#cv">MY SKILLS</a>
-                <a class="nav-item nav-link" href="#projects">PROJECTS </a>
+                <a class="nav-item nav-link" href="#projects">PLAYGROUND</a>
+                <div class="nav-item nav-link" >
+                <a class="nav-item nav-link" href="https://github.com/marcostellin" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+                <a class="nav-item nav-link" href="mailto:stellin.marco@gmail.com" target="_blank"><i class="fa fa-envelope-square fa-2x"></i></a>
+                <a class="nav-item nav-link" href="https://www.linkedin.com/in/marco-stellin/" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+                </div>
             </div>
           </div>
         </div>
@@ -40,7 +44,7 @@
 
         <div class="container-fluid odd-page">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 fadein">
 
                     <img id="profile-pic" src="./pics/justme.jpeg">
 
@@ -88,38 +92,34 @@
 
         </div>
 
-        <div id="cv" class="container-fluid odd-page">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="page-title">MY SKILLS</h2>
-                    <hr class="hr-odd">
-                </div>
-            </div>
-        </div>
 
         <div id="projects" class="container-fluid even-page">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="page-title">PROJECTS</h2>
+                    <h2 class="page-title">PLAYGROUND</h2>
                     <hr class="hr-even">
                 </div>
                 <div class="col-lg-4 col-md-6">
-<!--                     <a data-toggle="modal" data-target="#project1" href="#"><img src="./pics/website_project.png" class="img-fluid img-thumbnail"></a> -->
-                    <a href="#"><img src="./pics/website_project.png" class="img-fluid img-thumbnail"></a>
+                    <a href="http://room-checkin.us-west-2.elasticbeanstalk.com/" target="_blank"><img src="./pics/fenixRoomCheckin.jpg" class="img-fluid img-thumbnail"></a>
+                    <h4>Fenix Room Check-In</h4>
+                    <p>Web app that interfaces with the REST API of IST and allows searching available rooms and check-in in the rooms. Made with Flask, Amazon DynamoDB, Memcached, Bootstrap and jQuery (for AJAX requests). To test the app login as user:admin/pass:1234. (Not optimized for mobile)</p>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://yelpcamp-ms.herokuapp.com/" target="_blank"><img src="./pics/yelpCamp.jpg" class="img-fluid img-thumbnail"></a>
                     <h4>YelpCamp</h4>
+                    <p>Web app that allows to add and search campgrounds. It has been realized as part of an online course to learn web development. Made with Express.js, MongoDB and Bootstrap.</p>
                 </div>
+                
                 <div class="col-lg-4 col-md-6">
-                    <img src="./pics/webapp_project.png" class="img-fluid img-thumbnail">
-                    <h4>Movier</h4>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <img src="./pics/IoT_project.png" class="img-fluid img-thumbnail">
-                    <h4>Misc</h4>
+                    <a href="projects/countdownjs/index.html" target="_blank"><img src="./pics/countdownJS.png" class="img-fluid img-thumbnail"></a>
+                    <h4>countdown.js</h4>
+                    <p>Pure Javascript application that lets you create countdown to specific events. It uses the Web Storage API so only the most recent
+                    browsers are supported.</p>
                 </div>
             </div>
         </div>  
 
-        <div class="container-fluid last-page">
+        <div id="contacts" class="container-fluid last-page">
             <div class="row">
                 <div class="col-md-4">
                    
