@@ -17,8 +17,25 @@ hr {
     height: 3px;
     margin-bottom: 30px;
     margin-top: 30px;
+    background: #2c3e50;
 }
 
+#interests ul li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.fadein {
+  opacity: 0;
+  animation: fadein 3s 0.5s forwards;
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
 
 .navbar {
     min-height:100px !important;
@@ -33,25 +50,24 @@ hr {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    color : #18bc9c;
+    color : #d3d3d8;
 }
 
 .navbar-dark .navbar-brand:hover {
-    color : #18bc9c;
+    font-size: 1.6rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-    padding-left: 1rem !important;
+    padding-left: 1rem !important; 
     padding-right: 1rem !important;
 }
 
-.active {
-    background-color: #cfcd2d;
+a.nav-item.nav-link.active {
+    background-color: #d3d3d8;
+    color: black !important;
     border-radius: 0.25rem !important; 
 }
 
@@ -71,10 +87,10 @@ a.nav-item.nav-link.active:hover {
 }
 
 .odd-page {
-    background-color: #cfcd2d;
+    background-color: #d3d3d8;
     padding-top: 30px;
     padding-bottom: 30px;
-    color: white;
+    color: #2c3e50;
 }
 
 .even-page {
@@ -102,20 +118,11 @@ a.nav-item.nav-link.active:hover {
     color: white;
 }
 
-.hr-odd {
-    background : white;
-}
-
-.hr-even {
-    background: #2c3e50; 
-}
-
 .img-thumbnail {
     height: 300px;
 }
 
 .img-story {
-    /*margin: 30px 30px 30px 30px;*/
     width: 80%;
 }
 
@@ -123,11 +130,6 @@ a.nav-item.nav-link.active:hover {
     font-size: 1em;
     margin: 50px 50px 50px 50px;
 }
-
-/*.center-col{
-    display: flex;
-    align-items: center;
-}*/
 
 #name {
     font-size: 2em;
@@ -144,6 +146,26 @@ a.nav-item.nav-link.active:hover {
     margin-bottom: 50px;
     height: 126px;
     width: 134px;
+}
+
+#navbar-main .container {
+  align-items: center;
+  margin: 0;
+  padding: 0 20px;
+  max-width: 2000px;
+}
+
+#projects img {
+  height: 200px;
+  width: 400px;
+}
+
+#navbarSupportedContent div.nav-item.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -163,5 +185,16 @@ a.nav-item.nav-link.active:hover {
   #profile-pic {
     height: 253px;
     width: 268px;
+  }
+}
+
+@media (max-width: 800px) {
+  .last-page {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .last-page .fa {
+    font-size: 40px;
   }
 }
