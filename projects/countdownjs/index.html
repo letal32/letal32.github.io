@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CountdownJS</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/countdown.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- JS libraries -->
+    <script type="text/javascript" src="assets/js/lib/moment.js"></script>
+
+</head>
+<body>
+
+    <h1>CountdownJS</h1>
+
+    <a href="#openModal" id="modalLink">Add New Countdown</a>
+
+    <div id="container">
+
+    </div>
+
+    <div id="openModal" class="modalDialog">
+        <div>
+            
+            <a href="#close" title="Close" class="close">X</a>
+            <div id="modal-form">
+            <h2>Add New Countdown</h2>
+            <div>
+               <label name="title">Title </label>
+               <input id="modal-title" placeholder="Title" type="text" name="title"> 
+            </div>
+            <div>
+                <label name="date">Date </label>
+                <input id="modal-date" type="date" name="date">  
+            </div>
+            
+            <a class="btn btn-success" id="newCountdown" href="#close">Add Countdown</a></button>
+            </div>
+        </div>  
+    </div>
+
+
+
+    <script type="text/javascript" src="assets/js/countdown.js" ></script>
+</body>
+</html>
