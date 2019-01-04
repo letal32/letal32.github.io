@@ -34,7 +34,14 @@ hr {
 
 .fadein {
   opacity: 0;
-  animation: fadein 3s 0.5s forwards;
+  -webkit-animation: fadein 3s 0.5s forwards;
+          animation: fadein 3s 0.5s forwards;
+}
+
+@-webkit-keyframes fadein {
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadein {
@@ -45,11 +52,15 @@ hr {
 
 .navbar-scroll {
     min-height:50px !important;
+    -webkit-transition: min-height 0.3s linear;
+    -o-transition: min-height 0.3s linear;
     transition: min-height 0.3s linear;
 }
 
 .navbar-basic {
     min-height:100px !important;
+    -webkit-transition: min-height 0.3s linear;
+    -o-transition: min-height 0.3s linear;
     transition: min-height 0.3s linear;
 }
 
@@ -163,7 +174,9 @@ a.nav-item.nav-link.active:hover {
 }
 
 #navbar-main .container {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0 20px;
   max-width: 2000px;
@@ -175,9 +188,15 @@ a.nav-item.nav-link.active:hover {
 }
 
 #navbarSupportedContent div.nav-item.nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
 }
